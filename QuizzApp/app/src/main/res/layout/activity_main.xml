@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Dog Quiz"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="70sp" />
+
+
+    <ImageButton
+        android:layout_width="226dp"
+        android:layout_height="114dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/images"
+        android:onClick="start_quiz" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:textSize="40sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:onClick="start_quiz" />
+
+
+
+
+
+
+</LinearLayout>

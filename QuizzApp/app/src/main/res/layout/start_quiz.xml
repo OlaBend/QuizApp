@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f4f8"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/_2322245751535007648_128" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timer"
+                android:layout_marginLeft="5dp"
+                android:text="10s"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/_8669513841655289605_128" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/points"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="0/6"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Jaką rasę przedstawia zdjęcie?"
+            android:textSize="24sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/showImage"
+                android:layout_width="248dp"
+                android:layout_height="246dp"
+                android:layout_margin="5dp"
+                tools:srcCompat="@drawable/beagle_pies" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn1"
+                android:onClick="selectedAnswer"
+                android:textSize="32sp"
+                android:textColor="@android:color/white"
+                android:background="#9874a7"
+                app:backgroundTint="@null"
+                android:layout_margin="2dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn2"
+                android:onClick="selectedAnswer"
+                android:textSize="32sp"
+                android:textColor="@android:color/white"
+                android:background="#9874a7"
+                app:backgroundTint="@null"
+                android:layout_margin="2dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn3"
+                android:onClick="selectedAnswer"
+                android:textSize="32sp"
+                android:textColor="@android:color/white"
+                android:background="#9874a7"
+                app:backgroundTint="@null"
+                android:layout_margin="2dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn4"
+                android:onClick="selectedAnswer"
+                android:textSize="32sp"
+                android:textColor="@android:color/white"
+                android:background="#9874a7"
+                app:backgroundTint="@null"
+                android:layout_margin="2dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/result"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_gravity="right"
+                android:background="#928697"
+                android:onClick="nastepnePytanie"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Następne pytanie"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
